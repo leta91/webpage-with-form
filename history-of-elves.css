@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* the above code allows the arrow button to go to the top of the webpage smoothly */
+
+* {
+    font-family:Cambria, serif;
+}
+
+/* the * symbol targets all elements that are in the webpage.
+Added a fallback font of serif in case Cambria is not displayed */
+
+body {
+    background-color: #F6F6F6;
+}
+
+#elf-of-Tolkien, #elvish-quotation, #elven-family {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 50%;
+}
+
+/* the above code is to center all images and width: 50%
+is to have the same level of enlargement based on the size of the page */ 
+
+h1, h2, p {
+    text-align: justify;
+}
+
+/* the above code is to make this webpage act as a normal webpage would.
+Added some words in bold print and the subdivision in paragraphs so the reading is easier especially on mobile devices
+Also the time staying on the page is prolonged as it is comfortable. The readers can grab the main concepts of the webpage */
+
+h1, figcaption, a {
+    color: #0078AA;
+}
+
+h3, p, button, legend, fieldset, ul > li, ol > li, input[type="url"] {
+    color: #3AB4F2;
+    font-size: 20px;
+}
+
+/* about the above code ul > li and ol > li mean that only the directed child elements of ul and ol (that are always li) will be targeted.
+input[type="url"] accepts only https:// or  http:// URL so this has been put as its placeholder text */
+
+h2, a:hover {
+  color: #F2DF3A;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F2DF3A;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #F2DF3A;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #F2DF3A;
+  }
+
+/* the above code is to change the placeholder text in input type="url"
+and make sure it is being shown correctly on different browsers.
+Firefox adds a lower opacity to the placeholder so I added opacity: 1.
+
+Microsoft applications such as Edge and Internet Explorer support
+a number of special Microsoft extensions to CSS. These extensions are prefixed with -ms- */ 
+
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* to add some space from the above image that is describing */ 
+
+button {
+    background-color: #F2DF3A;
+    border-radius: 5px;
+    border: 3px solid #0078AA;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;  
+}
+
+/* border-radius to make the button with rounder edges instead of remaining sharp */
+
+#myinput {
+    display: block;
+    width: 100%;
+}
+
+#mylabel {
+    visibility: hidden;
+}
+
+/* the above code is to hide the label that gives the length to #myinput */
+
+#box {
+  display: table;       /* instead of display: inline-block; because it can cause some ghost margin */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* the code from line 90 to line 105 is to make the input long as the label text put above it.
+the label text and its input are both nested within the parent div id="box" */
+
+
+#button-container {
+    display: table;
+    margin: auto;
+}
+
+#btn {
+    width: 100%;
+    display: block;
+}
+
+/* the code from line 111 to line 119 is to center the submit button
+in relation to the input placed above (similar code to the input and label on line 90-105) */
+
+hr {
+    border: 5px dotted #F2DF3A;
+}
+
+/* the above code displays a divider */
+
+#text-below-divider {
+    margin-top: 35px;
+}
+
+fieldset {
+    border: 3px solid #F2DF3A;
+}
+
+/* the above code is to change the color of the fieldset element*/
+
+#to-top-viewport {
+  position: fixed;
+  color: #3AB4F2;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* the above code is the styling of the arrow button which takes to the top of the webpage*/
